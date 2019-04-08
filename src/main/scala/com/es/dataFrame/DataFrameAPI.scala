@@ -137,7 +137,7 @@ object DataFrameAPI {
 
     //orderBy和sort：按指定字段排序，默认为升序 ,按指定字段排序。加个-表示降序排序。sort和orderBy使用方法相同 只能对数字类型和日期类型生效
     esDFrame.orderBy(esDFrame("age_year").desc).show(false)
-    esDFrame.orderBy(-esDFrame("patient_birthday")).show(false)
+    esDFrame.orderBy(esDFrame("patient_birthday")).show(false)
   }
 
   /**
